@@ -1,10 +1,10 @@
 //your JS code here. If required.
 
-const currentUrl = window.location.href;
+const url = window.location.href; // Get the full URL
+const lettersOnly = url.match(/[a-zA-Z]/g); // Regex to match only letters
+const letterCount = lettersOnly ? lettersOnly.length : 0;
 
-const n = currentUrl.match(/[a-zA-Z]/g);
-
-alert("The length of the URL is : "+ n.length);
+alert(`The length of the URL is: ${letterCount}`);
 
 
 
