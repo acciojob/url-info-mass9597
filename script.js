@@ -2,7 +2,7 @@
 
 const currentUrl = window.location.href;
 
-const n = currrentUrl.match(/[a-zA-Z]/g);
+const n = currentUrl.match(/[a-zA-Z]/g);
 
 alert("The length of the URL is : "+ n.length);
 
